@@ -19,6 +19,14 @@ updates:
       - dependency-name: '*'
         update-types:
           - version-update:semver-major
+      # Expo manages these together. Upgrade them with `npx expo install --check`
+      # so the React, React Native, and Expo versions stay in step. Dependabot
+      # cannot see that constraint and produces a broken tree.
+      - dependency-name: 'expo*'
+      - dependency-name: 'react'
+      - dependency-name: 'react-dom'
+      - dependency-name: 'react-native*'
+      - dependency-name: '@types/react'
 
   - package-ecosystem: github-actions
     directory: /
