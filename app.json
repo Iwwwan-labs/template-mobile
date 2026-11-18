@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "template-mobile",
+    "slug": "template-mobile",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "scheme": "iwwwanlabs",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "plugins": ["expo-router"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "dev.iwwwanlabs.template"
+    },
+    "android": {
+      "package": "dev.iwwwanlabs.template",
+      "adaptiveIcon": {
+        "backgroundColor": "#0b0d12"
+      },
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static"
+    },
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
